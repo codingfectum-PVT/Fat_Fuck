@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family:RifficFree;
+  src: url(./assets/fonts/RifficFree-Bold.ttf);
+}
+
+@font-face {
+  font-family:MINION;
+  src: url(./assets/fonts/THE\ MINION.ttf);
+}
+@font-face {
+  font-family:WallBomber;
+  src: url(./assets/fonts/Wall\ Bomber.ttf);
+}
+@font-face {
+  font-family:Quicksand;
+  src: url(./assets/fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+.sectionTitle {
+  line-height: 56px;
+  line-height: .9655172414;
+  color: #fff;
+  text-align: center;
+}
+.sectionTitle span {
+  font-family: "Quicksand";
+  font-weight: 900;
+  background: #fff;
+}
+
+.textStroke{
+  -webkit-text-stroke:5px;
+  -webkit-text-stroke-color:#000;
+}
