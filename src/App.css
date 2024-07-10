@@ -23,7 +23,17 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+::-webkit-scrollbar{
 
+  height: 10px;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #FBF700;
+}
+::-webkit-scrollbar-track{
+  background-color: #FF4F01;
+}
 .App-link {
   color: #61dafb;
 }

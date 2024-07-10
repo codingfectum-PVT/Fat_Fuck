@@ -1,6 +1,9 @@
-export const tg= '';
-export const x= '';
+export const tg= 'https://t.me/FatFuckETH';
+export const x= 'https://x.com/FatFuckETH';
 export const dexScreener= '';
 export const dexTools= '';
 export const uniSwap= '';
+export const contractAddress= 'TBA';
+export const supply= 'TBA';
+export const tax= '0';
 // export const = '';

@@ -1,13 +1,10 @@
 import emotionStyled from '@emotion/styled'
 import React from 'react'
-import heroBg from "../../../assets/heroBg.jpg"
-import aboutImage from "../../../assets/aboutImage.png"
 import disclaimerImage from "../../../assets/disclaimerImage.png"
 import X from "../../../assets/X.png"
 import TG from "../../../assets/TG.png"
-import { Box, Container, Grid, Link, Typography } from '@mui/material'
+import { Box, Container, Grid, Link } from '@mui/material'
 import { Image } from '../../Styles/style'
-import CustomButton from '../../Components/CustomButton'
 import Paragraph from '../../Components/Paragraph'
 import BasicAccordion from '../../Components/Accordian'
 import { tg, x } from '../../../links'
@@ -41,12 +38,12 @@ const DisclaimerSection = () => {
                 </Grid>
                 <Grid item xs={12}>
                    <Paragraph className="textStroke" fontFamily="MINION" fontSize={{xs:"50px",sm:"90px"}}>
-                        Disclamer
+                        Disclaimer
                    </Paragraph>
                 </Grid>
                 <Grid item xs={12} md={8}>
-                    <BasicAccordion def1="Legal Disclaimer" def2="Yella Cutie Coin is a meme cryptocurrency and should be considered a high-risk investment. It is not regulated, and its value can be extremely volatile. Always conduct thorough research and consult with a financial advisor before investing." ></BasicAccordion>
-                    <BasicAccordion def1="Risk Disclosure" def2="Investing in cryptocurrencies, including Yella Cutie Coin, involves significant risk. You may lose some or all of your investment. Cryptocurrencies are subject to market risks, regulatory changes, and technological vulnerabilities. Only invest what you can afford to lose."></BasicAccordion>    
+                    <BasicAccordion def1="Legal Disclaimer" def2="FAT FUCK is a meme cryptocurrency and should not be considered financial advice or an investment recommendation. The project is not regulated and carries significant risks. Always conduct thorough research and consult with a financial advisor before investing." ></BasicAccordion>
+                    <BasicAccordion def1="Risk Disclosure" def2="Investing in cryptocurrencies, including FAT FUCK, involves substantial risk and the possibility of a complete loss of capital. Market volatility, regulatory changes, and technological vulnerabilities can significantly impact the value of your investment. Only invest what you can afford to lose."></BasicAccordion>    
                 </Grid>
                 <Grid item xs={12} display="flex" alignItems="center" justifyContent="center" gap="10px">
                     <Link href={x} target="blank">

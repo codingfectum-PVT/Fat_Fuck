@@ -11,12 +11,14 @@ const StyledButton = emotionStyled(Button)`
     border-radius:0;
     box-shadow:-5px 5px 0px #000;
     font-weight:900;
+    font-size:22px;
+    @media(max-width:599px){
     font-size:18px;
-
+    }
 `
 const CustomButton = (props) => {
   return (
-    <StyledButton>{props.children}</StyledButton>
+    <StyledButton {...props}>{props.children}</StyledButton>
   )
 }
 

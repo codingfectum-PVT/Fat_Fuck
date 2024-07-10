@@ -2,12 +2,11 @@ import emotionStyled from '@emotion/styled'
 import React from 'react'
 import heroBg from "../../../assets/heroBg.jpg"
 import aboutImage from "../../../assets/aboutImage.png"
-import heroTop from "../../../assets/heroTop.png"
-import heroBottom from "../../../assets/heroBootm.png"
-import { Box, Container, Grid, Typography } from '@mui/material'
+import { Box, Container, Grid } from '@mui/material'
 import { Image } from '../../Styles/style'
 import CustomButton from '../../Components/CustomButton'
 import Paragraph from '../../Components/Paragraph'
+import { tg, x } from '../../../links'
 
 
 const SectionWraper = emotionStyled(Box)`
@@ -37,20 +36,19 @@ const AboutSection = () => {
                    </Paragraph>
                 </Grid>
                 <Grid container item xs={12} sx={{display:"flex" ,justifyContent:"center",alignItems:"end",padding:"0 40px 60px",background:"linear-gradient(to top,#A13100 80%,transparent 0%)"}}>
-                   <Grid item xs={12} sm={5}>
+                   <Grid item xs={12} md={5}>
                         <Image src={aboutImage} alt=""/>
                    </Grid>
-                   <Grid item xs={12} sm={7}>
-                    <Paragraph textAlign="left" fontFamily="Quicksand" fontWeight="800">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-                    </Paragraph>
-                    <Box display="flex" gap="10px" marginTop="20px" >
-                    <CustomButton>
-                        Telegram
-                    </CustomButton>
-                    <CustomButton>
-                        X(Twitter)
-                    </CustomButton>
+                   <Grid item xs={12} md={7}>
+                    <Paragraph textAlign="left"fontFamily="Quicksand"mt={{xs:"0",md:"120px"}} fontWeight="800">
+                    Welcome to FAT FUCK, the crypto project that’s here to fuck shit up and leave a trail of chaos in its wake. Inspired by the unfiltered genius of Matt Furie, FAT FUCK isn’t just another coin—it’s a colossal middle finger to the mundane. If you're looking for a polite, clean-cut investment, get the fuck out. Think you've got the balls to ride this wild beast? We doubt it. FAT FUCK is for the brave, the brazen, and the batshit crazy.                    </Paragraph>
+                    <Box display="flex" flexWrap="wrap" gap="10px" marginTop="20px" >
+                        <CustomButton href={tg} target="blank">
+                            Telegram
+                        </CustomButton>
+                        <CustomButton href={x} target="blank">
+                            X(Twitter)
+                        </CustomButton>
                     </Box>
                    </Grid>
                 </Grid>
