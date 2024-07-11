@@ -1,9 +1,10 @@
 export const tg= 'https://t.me/FatFuckETH';
 export const x= 'https://x.com/FatFuckETH';
-export const dexScreener= '';
-export const dexTools= '';
-export const uniSwap= '';
-export const contractAddress= 'TBA';
-export const supply= 'TBA';
-export const tax= '0';
+export const dexScreener= 'https://dexscreener.com/ethereum/0xc67902e5f38f89de6da333dab9db96e762a60fa6';
+export const dexTools= 'https://www.dextools.io/app/en/ether/pair-explorer/0xa9f60050f70e8c07f01b9a312b11a4d26dc661ea?t=1720635886925';
+export const uniSwap= 'https://app.uniswap.org/swap?outputCurrency=0xC67902E5F38f89De6Da333dAb9Db96e762a60fa6&chain=ethereum';
+export const contractAddress= '0xC67902E5F38f89De6Da333dAb9Db96e762a60fa6';
+export const supply= '69,000,000,000';
+export const tax= '0/0';
+export const email= 'info@fatfuck.finance';
 // export const = '';

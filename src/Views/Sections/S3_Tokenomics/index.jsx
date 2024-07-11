@@ -63,11 +63,11 @@ const handleCopy =async () =>{
                 </Grid>
                 <Grid container item xs={12} spacing={4}>
                    <Grid item xs={12}>
-                   <Box width="100%" bgcolor="#fff" padding="20px" display="flex" alignItems={{xs:"start",md:"center"}} flexDirection={{xs:"column",md:"row"}} justifyContent="space-between">
+                   <Box width="100%" bgcolor="#fff" padding="20px" display="flex" alignItems={{xs:"start",md:"start"}} flexDirection={{xs:"column",md:"column"}} justifyContent="space-between">
                         <Paragraph fontFamily="RifficFree" color="#000" fontSize={{xs:"30px",sm:"40px"}}>
                             Contract:
                         </Paragraph>
-                        <Paragraph fontFamily="Quicksand" color="#000" fontWeight="900" fontSize={{xs:"30px",sm:"30px"}} sx={{display:"flex" ,justifyContent:"center",alignItems:"center",gap:"10px"}}>
+                        <Paragraph  fontFamily="Quicksand" color="#000" fontWeight="900" fontSize={{xs:"30px",sm:"30px"}} sx={{display:"flex" ,justifyContent:"center",alignItems:"center",gap:"10px",wordBreak:"break-all"}} textAlign="right">
                         {
                             isCopied ? "Copied" : contractAddress
                         }<FileCopyIcon onClick={handleCopy} sx={{color:"#000",fontSize:"32px",cursor:"pointer"}}/>

@@ -7,7 +7,7 @@ import { Box, Container, Grid, Link } from '@mui/material'
 import { Image } from '../../Styles/style'
 import Paragraph from '../../Components/Paragraph'
 import BasicAccordion from '../../Components/Accordian'
-import { tg, x } from '../../../links'
+import { email, tg, x } from '../../../links'
 
 
 const SectionWraper = emotionStyled(Box)`
@@ -52,6 +52,10 @@ const DisclaimerSection = () => {
                     <Link href={tg} target="blank">
                         <Image mw="60px" src={TG} alt=""/>
                     </Link>
+                </Grid>
+                <Grid item xs={12} display="flex" alignItems="center" justifyContent="center" gap="10px">
+                <Paragraph  fontFamily="Quicksand" color="#fff" fontWeight="900" fontSize={{xs:"30px",sm:"30px"}} sx={{display:"flex" ,justifyContent:"center",alignItems:"center",gap:"10px",wordBreak:"break-all"}} textAlign="right">
+                        Email: {email}</Paragraph>
                 </Grid>
             </Grid>
         </Container>
